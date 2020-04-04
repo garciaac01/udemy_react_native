@@ -3,9 +3,7 @@ import { Text, StyleSheet } from "react-native";
 
 const HomeScreen = () => {
   return (
-    <>
-      <Text style={styles.text}>Mista Parker!!</Text>
-    </>
+    <Text style={styles.text}>Mista Parker!!</Text>
   );
 };
 
