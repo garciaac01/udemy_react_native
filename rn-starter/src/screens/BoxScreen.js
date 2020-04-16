@@ -11,14 +11,19 @@ const BoxScreen = () => {
 
 // for alignItems, the options are:
 // stretch -- the default, takes up the whole width of the parent
-// flex-start -- takes up the width of their own content
+// flex-start -- takes up the width of their own content from the start of the parent
 // center
 // flex-end -- takes up width of content at the right side of the parent
+
+// flexDirection
+// column by default
 const styles = StyleSheet.create({
     viewStyle: {
-        alignItems: 'flex-end',
+        flexDirection: 'row',
         borderWidth: 3,
-        borderColor: 'black'
+        borderColor: 'black',
+        height: 200,
+        alignItems: 'center'
     },
     textStyle: {
         borderWidth: 3,
