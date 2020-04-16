@@ -31,7 +31,6 @@ const styles = StyleSheet.create({
         borderWidth: 3,
         borderColor: 'black',
         height: 200,
-        alignItems: 'center'
     },
     textOneStyle: {
         borderWidth: 3,
@@ -40,8 +39,8 @@ const styles = StyleSheet.create({
     textTwoStyle: {
         borderWidth: 3,
         borderColor: 'red',
-        position: 'absolute',
-        fontSize: 18
+        fontSize: 18,
+        top: 10
     },
     textThreeStyle: {
         borderWidth: 3,
@@ -65,6 +64,12 @@ const styles = StyleSheet.create({
 // position
 // assigned on child
 // relative by default -- basically means "do what you normally do"
-// absolute is other option
+// absolute is other option -- essentially ignores its sibling elements
+
+// top bottom left right
+// adds extra spacing between two child elements
+// essentially renders the elements and then makes this shift without moving the other elements
+// for example, if we have three <text> on stacked up, and we do top: 10 on the middle one,
+// we'll move the middle element down 10 and it will be partially overlapping the third element.
 
 export default BoxScreen;
