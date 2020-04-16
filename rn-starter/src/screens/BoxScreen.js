@@ -16,14 +16,23 @@ const BoxScreen = () => {
 // flex-end -- takes up width of content at the right side of the parent
 
 // flexDirection
-// column by default
+// column by default--switching to row aligns the items horizontally
+
+// justifyContent
+// lays out children along the flexDirection axis (essentially aligns things the opposite that alignItems does)
+// flex-start -- at the start of the parent container
+// center
+// space-around
+// space-between
+// flex-end
+
 const styles = StyleSheet.create({
     viewStyle: {
         flexDirection: 'row',
         borderWidth: 3,
         borderColor: 'black',
         height: 200,
-        alignItems: 'center'
+        justifyContent: 'space-around'
     },
     textStyle: {
         borderWidth: 3,
