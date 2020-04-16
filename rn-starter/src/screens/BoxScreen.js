@@ -40,7 +40,8 @@ const styles = StyleSheet.create({
     textTwoStyle: {
         borderWidth: 3,
         borderColor: 'red',
-        alignSelf: 'stretch'
+        position: 'absolute',
+        fontSize: 18
     },
     textThreeStyle: {
         borderWidth: 3,
@@ -60,5 +61,10 @@ const styles = StyleSheet.create({
 // assigned on child element
 // essentially overrides alignItems from the parent element
 // flex-start, center, and flex-end, stretch
+
+// position
+// assigned on child
+// relative by default -- basically means "do what you normally do"
+// absolute is other option
 
 export default BoxScreen;
