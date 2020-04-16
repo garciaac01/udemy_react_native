@@ -31,21 +31,20 @@ const styles = StyleSheet.create({
         borderWidth: 3,
         borderColor: 'black',
         height: 200,
+        alignItems: 'center'
     },
     textOneStyle: {
         borderWidth: 3,
         borderColor: 'red',
-        flex: 4
     },
     textTwoStyle: {
         borderWidth: 3,
         borderColor: 'red',
-        flex: 4
+        alignSelf: 'stretch'
     },
     textThreeStyle: {
         borderWidth: 3,
         borderColor: 'red',
-        flex: 2
     }
 });
 
@@ -56,5 +55,10 @@ const styles = StyleSheet.create({
 // works proportionally, for example:
 // elOne: flex 4, elTwo: flex 4, ,elThree: flex 2
 // elOne and elTwo will take up 40% of the extra spac each, while elThree will take up 20%
+
+// alignSelf
+// assigned on child element
+// essentially overrides alignItems from the parent element
+// flex-start, center, and flex-end, stretch
 
 export default BoxScreen;
