@@ -40,7 +40,7 @@ const styles = StyleSheet.create({
         borderWidth: 3,
         borderColor: 'red',
         fontSize: 18,
-        top: 10
+        ...StyleSheet.absoluteFillObject
     },
     textThreeStyle: {
         borderWidth: 3,
@@ -71,5 +71,10 @@ const styles = StyleSheet.create({
 // essentially renders the elements and then makes this shift without moving the other elements
 // for example, if we have three <text> on stacked up, and we do top: 10 on the middle one,
 // we'll move the middle element down 10 and it will be partially overlapping the third element.
+
+//setting a child to position: absolute, and top/bottom/left/right to 0 will get
+// a child to fill up the entire parent element.
+// alternative is to do ...StyleSheet.absoluteFillObject
+
 
 export default BoxScreen;
